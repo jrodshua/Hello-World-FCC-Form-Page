@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jen & Berry's Ice Cream Survey</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jen & Berry's Survey Form</h1>
+            <p>Thank you for taking the time to help us create even more of your favorite ice cream!</p>        
+        </div>
+
+        <form>
+            <div class="survey-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" class="name" placeholder="Enter your name" required>
+            </div>
+            <div class="survey-group">
+                <label for="email"id="email-label">Email</label>
+                <input type="email" name="email" class="email" placeholder="Enter your email">
+            </div>
+            <div class="survey-group">
+                <label for="age" id="age-label">Age</label>
+                <input type="number" name="age" class="age" placeholder="Age" min="10" max="99">
+            </div>
+            <div class="survey-group">
+                <p>How often do you eat our ice cream?</p>
+                <select name="frequency" id="frequency">
+                    <option disabled selected value>Select below</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+            <div class="survey-group">
+                <p>What's most important to you?</p>
+                <label>
+                    <input type="radio" name="most-important" class="important" value="unique" checked/>Unique flavors
+                </label>
+                <label>
+                    <input type="radio" name="most-important" class="important" value="classic"/>Classic flavors
+                </label>
+                <label>
+                    <input type="radio" name="most-important" class="important" value="both"/>Both
+                </label>
+            </div>
+            <div class="survey-group">
+                <p>What's your favorite Jen & Berry's flavor?</p>
+                <select name="fav-flav" id="fav-flav">
+                    <option disabled selected value>Select below</option>
+                    <option value="cherry-cruz">Cherry Cruz</option>
+                    <option value="phrog-food">Phrog Food</option>
+                    <option value="full-baked">Full Baked Brownie</option>
+                    <option value="pudgy-monkey">Pudgy Monkey</option>
+                </select>
+            </div>
+            <div class="survey-group">
+                <p>Which flavor combo is your favorite?</p>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="straw-nana-pie" class="combo" checked>Strawberry & Banana Cream Fruit Pie
+                </label>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="choc-matcha-nibs" class="combo">Chocolate Matcha & Cacao Nibs
+                </label>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="blue-nana-bread" class="combo">Blueberry Banana Nut Bread
+                </label>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="white-choc-cake" class="combo">White Chocolate Red Velvet Cake
+                </label>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="car-apple-pie" class="combo" checked>Caramel Green Apple Pie
+                </label>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="cake-lemon-ras" class="combo">Cake Batter Lemon Raspberry Swirl
+                </label>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="straw-choc-mochi" class="combo">Strawberry Chocolate Fudge Mochi
+                </label>
+                <label>
+                    <input type="checkbox" name="flav-combo" value="orange-van-cream" class="combo">Orange & Vanilla Creamsicle
+                </label>
+            </div>
+            <div class="survey-group">
+                <p>Any comments or flavor suggestions?</p>
+                <textarea name="comment" id="comment" placeholder="Enter comments here..."></textarea>
+            </div>
+            <div class="survey-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
